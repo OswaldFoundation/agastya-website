@@ -328,77 +328,117 @@ h1.title {
       border-radius: 12px;
       box-shadow: 0 14px 24px 0 rgba(50, 49, 58, 0.25); }
 
-#pricing .ma-b-mobile {
-  margin: 50px 5px;
-  width: 22.5%; }
-#pricing .card {
+#pricing .main {
   width: 100%;
-  font-size: 1.4rem;
+  margin: auto; }
+#pricing label {
+  display: block;
+  margin-bottom: 2.5em;
+  font-size: 13px;
+  font-weight: bold; }
+#pricing .rangeslider__tooltip {
+  display: block;
+  margin-top: 2.5em;
+  font-size: 12px;
+  color: #a59eb5; }
+#pricing .rangeslider,
+#pricing input[type='range'] {
+  max-width: 400px; }
+#pricing .rangeslider__handle {
+  border-radius: 22px;
+  line-height: 42px;
   text-align: center;
-  border: 1px solid #f5f5f5;
-  position: relative; }
-  #pricing .card.special {
-    transform: scale(1.1);
-    z-index: 999;
-    box-shadow: 0 14px 24px 0 rgba(50, 49, 58, 0.05);
-    border: none; }
-    #pricing .card.special .comparison--name {
-      background: #347fb9;
-      color: #fff; }
-    #pricing .card.special .comparison--price {
-      background: #5298ce;
-      color: #fff; }
-    #pricing .card.special .comparison--button {
-      background: #347fb9; }
-  #pricing .card .comparison--name {
-    background: #eaeaea;
-    padding: 2.5% 5%;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 1px; }
-  #pricing .card .comparison--price {
-    background: #f5f5f5;
-    font-size: 3.5rem;
-    text-align: center;
-    position: relative; }
-    #pricing .card .comparison--price.smaller {
-      font-size: 2.5em; }
-  #pricing .card .comparison--price:before {
-    content: "$";
-    font-size: 1rem;
-    position: absolute;
-    float: left;
-    top: 20%;
-    left: 30%; }
-  #pricing .card .comparison--price:after {
-    content: "/ month";
-    font-size: 0.9rem;
-    position: absolute;
-    float: right;
-    bottom: 17.5%;
-    right: 17.5%; }
-  #pricing .card .comparison--price.smaller:before {
-    content: ""; }
-  #pricing .card .comparison--price.smaller:after {
-    content: ""; }
-  #pricing .card .comparison--price.bigger:before {
-    left: 23.5%; }
-  #pricing .card .comparison--price.bigger:after {
-    right: 10%; }
-  #pricing .card .comparison--item {
-    padding: 5% 0;
-    font-size: 1rem;
-    border-bottom: 1px solid #f5f5f5;
-    width: 100%;
-    background: #fff; }
-  #pricing .card .comparison--button {
-    background: #eaeaea;
-    padding: 2.5% 5%;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 1px; }
-    #pricing .card .comparison--button a {
-      color: #fff; }
+  font-weight: bold; }
+  #pricing .rangeslider__handle:after {
+    background: 0; }
+#pricing .rangeslider,
+#pricing .rangeslider__fill {
+  display: block;
+  border-radius: 10px;
+  text-align: center; }
+#pricing .rangeslider {
+  background: #e6e5ea;
+  background: #1A2980;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #89cfe1, #347fb9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #89cfe1, #347fb9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  box-shadow: 0 14px 24px 0 rgba(50, 49, 58, 0.25);
+  margin: 0 auto; }
+#pricing .rangeslider--horizontal {
+  height: 10px;
+  width: 100%;
+  margin: 120px auto; }
+#pricing .rangeslider__fill {
+  position: absolute; }
+#pricing .rangeslider--horizontal .rangeslider__fill {
+  top: 0;
+  height: 100%; }
+#pricing .rangeslider--vertical .rangeslider__fill {
+  bottom: 0;
+  width: 100%; }
+#pricing h3#priceQuote {
+  font-size: 3rem;
+  height: 140px;
+  width: 140px;
+  line-height: 140px;
+  border-radius: 100%;
+  color: #fff;
+  background: -webkit-linear-gradient(to right, #61bfd6, #347fb9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #61bfd6, #347fb9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  box-shadow: 0 14px 24px 0 rgba(50, 49, 58, 0.25); }
+  #pricing h3#priceQuote .smaller {
+    font-size: 2rem; }
+#pricing .rangeslider__handle {
+  background: white;
+  border: 6px solid #4bc67d;
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  transition: none;
+  box-shadow: 0 14px 24px 0 rgba(50, 49, 58, 0.25); }
+  #pricing .rangeslider__handle.js-low {
+    border-color: #89cfe1; }
+  #pricing .rangeslider__handle.js-med {
+    border-color: #4cb6d1; }
+  #pricing .rangeslider__handle.js-high {
+    border-color: #347fb9; }
+#pricing .rangeslider__handle:after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+#pricing .rangeslider--horizontal .rangeslider__handle {
+  top: -20px;
+  touch-action: pan-y;
+  -ms-touch-action: pan-y; }
+#pricing .rangeslider--vertical .rangeslider__handle {
+  left: -10px;
+  touch-action: pan-x;
+  -ms-touch-action: pan-x; }
+#pricing input[type="range"]:focus + .rangeslider .rangeslider__handle {
+  -moz-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+  -webkit-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+  box-shadow: 0 0 8px rgba(255, 0, 255, 0.9); }
 
 #mailing {
   border-bottom: 0; }

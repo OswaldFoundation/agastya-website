@@ -7,18 +7,18 @@ $font-height: 1.5;
 
 html,
 body {
-   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "proxima-nova", sans-serif;
-  margin: 0;
-  height: 100%;
+	 text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: "proxima-nova", sans-serif;
+	margin: 0;
+	height: 100%;
 }
 
 * {
-  font-family: $font-family;
-  line-height: $font-height;
-  transition: all 0.3s ease;
+	font-family: $font-family;
+	line-height: $font-height;
+	transition: all 0.3s ease;
 }
 
 ::selection {
@@ -31,39 +31,39 @@ i {
 }
 
 .font-light {
-  font-weight: $font-weight-light;
+	font-weight: $font-weight-light;
 }
 
 .font-regular {
-  font-weight: $font-weight-regular;
+	font-weight: $font-weight-regular;
 }
 
 .font-heavy {
-  font-weight: $font-weight-heavy;
+	font-weight: $font-weight-heavy;
 }
 
 // utility
 
 .left {
-  text-align: left;
+	text-align: left;
 }
 
 .right {
-  text-align: right;
+	text-align: right;
 }
 
 .center {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .justify {
-  text-align: justify;
+	text-align: justify;
 }
 
 .hidden-sm {
-  display: none;
+	display: none;
 }
 .hidden {
 	display: none;
@@ -78,35 +78,35 @@ $breakpoint-med: 45em; // 720px
 $breakpoint-large: 60em; // 960px
 
 .container {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 
-  @media only screen and (min-width: $breakpoint-small) {
-    width: 80%;
-  }
+	@media only screen and (min-width: $breakpoint-small) {
+	width: 80%;
+	}
 
-  @media only screen and (min-width: $breakpoint-large) {
-    width: 80%;
-    max-width: 70rem;
-  }
+	@media only screen and (min-width: $breakpoint-large) {
+	width: 80%;
+	max-width: 70rem;
+	}
 }
 
 .row {
-  position: relative;
-  width: 100%;
+	position: relative;
+	width: 100%;
 }
 
 .row [class^="col"] {
-  float: left;
-  margin: 0.5rem 2%;
-  min-height: 0.125rem;
+	float: left;
+	margin: 0.5rem 2%;
+	min-height: 0.125rem;
 }
 
 .row::after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .col-1,
@@ -121,7 +121,7 @@ $breakpoint-large: 60em; // 960px
 .col-10,
 .col-11,
 .col-12 {
-  width: $width;
+	width: $width;
 }
 
 .col-1-sm { width:($width / 12) - ($gutter * 11 / 12); }
@@ -138,22 +138,22 @@ $breakpoint-large: 60em; // 960px
 .col-12-sm { width: $width; }
 
 @media only screen and (min-width: $breakpoint-med) {
-  .col-1 { width:($width / 12) - ($gutter * 11 / 12); }
-  .col-2 { width: ($width / 6) - ($gutter * 10 / 12); }
-  .col-3 { width: ($width / 4) - ($gutter * 9 / 12); }
-  .col-4 { width: ($width / 3) - ($gutter * 8 / 12); }
-  .col-5 { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
-  .col-6 { width: ($width / 2) - ($gutter * 6 / 12); }
-  .col-7 { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
-  .col-8 { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
-  .col-9 { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
-  .col-10 { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
-  .col-11 { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
-  .col-12 { width: $width; }
+	.col-1 { width:($width / 12) - ($gutter * 11 / 12); }
+	.col-2 { width: ($width / 6) - ($gutter * 10 / 12); }
+	.col-3 { width: ($width / 4) - ($gutter * 9 / 12); }
+	.col-4 { width: ($width / 3) - ($gutter * 8 / 12); }
+	.col-5 { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
+	.col-6 { width: ($width / 2) - ($gutter * 6 / 12); }
+	.col-7 { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
+	.col-8 { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
+	.col-9 { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
+	.col-10 { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
+	.col-11 { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
+	.col-12 { width: $width; }
 
-  .hidden-sm {
-    display: block;
-  }
+	.hidden-sm {
+	display: block;
+	}
 }
 
 button.cta {
@@ -198,7 +198,7 @@ a:hover {
 	// border-bottom: 1px solid #fff;
 }
 
-header {   
+header {	 
 	margin: 0;
 	color: #fff;
 	padding-bottom: 22.5vh;
@@ -281,7 +281,7 @@ h1.title {
 	img.press {
 		max-width: 100%;
 		-webkit-filter: grayscale(1);
-  filter: grayscale(1);
+	filter: grayscale(1);
 	}
 }
 
@@ -309,7 +309,7 @@ h1.title {
 }
 
 #features {
-	   
+		 
 
 	h2.feature-title {
 		font-size: 2.4rem;
@@ -371,98 +371,249 @@ h1.title {
 	}
 }
 
-#pricing {
-	.ma-b-mobile {
-		margin: 50px 5px;
-		width: 22.5%;
-	}
-	.card {
-		width: 100%;
-		font-size: 1.4rem;
-		text-align: center;
-		border: 1px solid #f5f5f5;
-		position: relative;
-		&.special {
-			transform: scale(1.1);
-			z-index: 999;
-			box-shadow: 0 14px 24px 0 rgba(50,49,58,.05);
-			border: none;
+// #pricing {
+// 	.ma-b-mobile {
+// 		margin: 50px 5px;
+// 		width: 22.5%;
+// 	}
+// 	.card {
+// 		width: 100%;
+// 		font-size: 1.4rem;
+// 		text-align: center;
+// 		border: 1px solid #f5f5f5;
+// 		position: relative;
+// 		&.special {
+// 			transform: scale(1.1);
+// 			z-index: 999;
+// 			box-shadow: 0 14px 24px 0 rgba(50,49,58,.05);
+// 			border: none;
 
-			.comparison--name {
-				background: $blue;
-				color: #fff;
-			}
-			.comparison--price {
-				background: lighten($blue, 10%);
-				color: #fff;
-			}
-			.comparison--button {
-				background: $blue;
-			}
-		}
+// 			.comparison--name {
+// 				background: $blue;
+// 				color: #fff;
+// 			}
+// 			.comparison--price {
+// 				background: lighten($blue, 10%);
+// 				color: #fff;
+// 			}
+// 			.comparison--button {
+// 				background: $blue;
+// 			}
+// 		}
 		
-		.comparison--name {
-			background: #eaeaea;
-			padding: 2.5% 5%;
-			text-transform: uppercase;
-			font-size: 0.9rem;
-			letter-spacing: 1px;
-		}
-		.comparison--price {
-			background: #f5f5f5;
-			font-size: 3.5rem;
-			text-align: center;
-			position: relative;
-			&.smaller {
-				font-size: 2.5em;
-			}
-		}
-		.comparison--price:before {
-			content: "$";
-			font-size: 1rem;
-			position: absolute;
-			float: left;
-			top: 20%;
-			left: 30%;
-		}
-		.comparison--price:after {
-			content: "/ month";
-			font-size: 0.9rem;
-			position: absolute;
-			float: right;
-			bottom: 17.5%;
-			right: 17.5%;
-		}
-		.comparison--price.smaller:before {
-			content: "";
-		}
-		.comparison--price.smaller:after {
-			content: "";
-		}
-		.comparison--price.bigger:before {
-			left: 23.5%;
-		}
-		.comparison--price.bigger:after {
-			right: 10%;
-		}
-		.comparison--item {
-			padding: 5% 0;
-			font-size: 1rem;
-			border-bottom: 1px solid #f5f5f5;
-			width: 100%;
-			background: #fff;
-		}
-		.comparison--button {
-			background: #eaeaea;
-			padding: 2.5% 5%;
-			text-transform: uppercase;
-			font-size: 0.9rem;
-			letter-spacing: 1px;
-			a {
-				color: #fff;
-			}
-		}
+// 		.comparison--name {
+// 			background: #eaeaea;
+// 			padding: 2.5% 5%;
+// 			text-transform: uppercase;
+// 			font-size: 0.9rem;
+// 			letter-spacing: 1px;
+// 		}
+// 		.comparison--price {
+// 			background: #f5f5f5;
+// 			font-size: 3.5rem;
+// 			text-align: center;
+// 			position: relative;
+// 			&.smaller {
+// 				font-size: 2.5em;
+// 			}
+// 		}
+// 		.comparison--price:before {
+// 			content: "$";
+// 			font-size: 1rem;
+// 			position: absolute;
+// 			float: left;
+// 			top: 20%;
+// 			left: 30%;
+// 		}
+// 		.comparison--price:after {
+// 			content: "/ month";
+// 			font-size: 0.9rem;
+// 			position: absolute;
+// 			float: right;
+// 			bottom: 17.5%;
+// 			right: 17.5%;
+// 		}
+// 		.comparison--price.smaller:before {
+// 			content: "";
+// 		}
+// 		.comparison--price.smaller:after {
+// 			content: "";
+// 		}
+// 		.comparison--price.bigger:before {
+// 			left: 23.5%;
+// 		}
+// 		.comparison--price.bigger:after {
+// 			right: 10%;
+// 		}
+// 		.comparison--item {
+// 			padding: 5% 0;
+// 			font-size: 1rem;
+// 			border-bottom: 1px solid #f5f5f5;
+// 			width: 100%;
+// 			background: #fff;
+// 		}
+// 		.comparison--button {
+// 			background: #eaeaea;
+// 			padding: 2.5% 5%;
+// 			text-transform: uppercase;
+// 			font-size: 0.9rem;
+// 			letter-spacing: 1px;
+// 			a {
+// 				color: #fff;
+// 			}
+// 		}
 
+// 	}
+// }
+
+#pricing {
+	.main {
+	    width: 100%;
+	    margin: auto;
+	}
+
+	label {
+	    display: block;
+	    margin-bottom: 2.5em;
+	    font-size: 13px;
+	    font-weight: bold;
+	}
+
+	.rangeslider__tooltip {
+	    display: block;
+	    margin-top: 2.5em;
+	    font-size: 12px;
+	    color: #a59eb5;
+	}
+
+	.rangeslider,
+	input[type='range'] {
+	    max-width: 400px;
+	}
+
+	.rangeslider__handle {
+	    border-radius: 22px;
+	    line-height: 42px;
+	    text-align: center;
+	   	font-weight: bold;
+	    
+	    &:after {
+	    background: 0;
+	    }
+	}
+
+	.rangeslider,
+	.rangeslider__fill {
+	    display: block;
+	    border-radius: 10px;
+	    text-align: center;
+	}
+
+	.rangeslider {
+		background: #e6e5ea;
+		background: #1A2980; /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, lighten(#38aecc, 20%) , #347fb9); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, lighten(#38aecc, 20%) , #347fb9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		position: relative;
+		box-shadow: 0 14px 24px 0 rgba(50,49,58,.25);
+		margin: 0 auto;
+	}    
+
+	.rangeslider--horizontal {
+	    height: 10px;
+	    width: 100%;
+	    margin: 120px auto;
+	}
+	.rangeslider__fill {
+	    // background: #4bc67d;
+	    position: absolute;
+	}
+	.rangeslider--horizontal .rangeslider__fill {
+	    top: 0;
+	    height: 100%;
+	}
+	.rangeslider--vertical .rangeslider__fill {
+	    bottom: 0;
+	    width: 100%;
+	}
+	h3#priceQuote {
+		font-size: 3rem;
+		height: 140px;
+		width: 140px;
+		line-height: 140px;
+		border-radius: 100%;
+		color: #fff;
+		background: -webkit-linear-gradient(to right, lighten(#38aecc, 10%) , #347fb9); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, lighten(#38aecc, 10%) , #347fb9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		position: relative;
+		box-shadow: 0 14px 24px 0 rgba(50,49,58,.25);
+		.smaller {
+			font-size: 2rem;
+		}
+	}
+	// h3#priceQuote:before {
+	// 	content: "$";
+	// }
+	.rangeslider__handle {
+	    background: white;
+	    border: 6px solid #4bc67d;
+	    cursor: pointer;
+	    display: inline-block;
+	    width: 40px;
+	    height: 40px;
+	    position: absolute;
+	    -moz-border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    border-radius: 50%;
+	    transition: none;
+	    box-shadow: 0 14px 24px 0 rgba(50,49,58,.25);
+
+	    
+	    &.js-low {
+	    border-color: lighten(#38aecc, 20%);
+	    }
+	    
+	    &.js-med {
+	    border-color: lighten(#38aecc, 5%);
+	    }
+	    
+	    &.js-high {
+	    border-color: #347fb9;
+	    }
+	}
+	.rangeslider__handle:after {
+	    content: "";
+	    display: block;
+	    width: 18px;
+	    height: 18px;
+	    margin: auto;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    -moz-border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    border-radius: 50%;
+	}
+	.rangeslider__handle:active {
+	    
+	}
+	.rangeslider--horizontal .rangeslider__handle {
+	    top: -20px;
+	    touch-action: pan-y;
+	    -ms-touch-action: pan-y;
+	}
+	.rangeslider--vertical .rangeslider__handle {
+	    left: -10px;
+	    touch-action: pan-x;
+	    -ms-touch-action: pan-x;
+	}
+
+	input[type="range"]:focus + .rangeslider .rangeslider__handle {
+	    -moz-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+	    -webkit-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+	    box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
 	}
 }
 
